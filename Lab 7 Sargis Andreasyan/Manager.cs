@@ -9,18 +9,19 @@ namespace Lab_7_Sargis_Andreasyan
     internal class Manager
     {
         public int PosX;
-        public int PosY;
         public char Symbol;
-        
+
         public void Draw()
         {
-            Console.SetCursorPosition(PosX, PosY);
-            Console.Write(Symbol);
+            for (int i = 0; i < 10; i++)
+            {
+                Console.SetCursorPosition(PosX, i);
+                Console.Write(Symbol);
+            }
         }
-        public Manager(int x,int y,char sym)
+        public Manager(int x,char sym)
         {
             PosX = x;
-            PosY = y;
             Symbol = sym;
         }
     }

@@ -11,6 +11,7 @@ namespace Lab_7_Sargis_Andreasyan
         public int PosX { set; get; }
         public int PosY { set; get; }
         public char Symbol = 'X';
+        public int Speed { set; get; }
         public ConsoleColor Color { set; get; }
 
         virtual public void Draw()
